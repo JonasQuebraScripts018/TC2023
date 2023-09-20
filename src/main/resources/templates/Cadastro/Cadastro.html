@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    <script src="JS/validadorCPF.js" defer></script>
+    <script src="JS/cadastro.js" defer></script>
+    <script src="JS/Login.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Cadastro</title>
+</head>
+<body>
+<div class="container">
+    <h3 class="text-center mt-4">Bem vindo ao Agenda Master!!</h3>
+    <h6 class="text-center mt-2 mb-3">Cadastro Agenda Master</h6>
+    <form action="/" method="post">
+        <div class="row">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="sp_nome"><i class="fa-solid fa-user"></i></span>
+            <input id="nome" name="nome" type="text" class="form-control" placeholder="Insira seu Nome"
+                   aria-label="Username" aria-describedby="sp_nome">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="sp_email"><i class="fa-solid fa-envelope"></i></span>
+            <input id="email" name="email" type="text" class="form-control" placeholder="Insira seu Email"
+                   aria-label="Username"
+                   aria-describedby="sp_email">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="sp_cpf"><i class="fa-solid fa-envelope"></i></span>
+            <input id="cpf" name="cpf" type="text" class="form-control" placeholder="Insira seu CPF"
+                   aria-label="Username"
+                   aria-describedby="sp_cpf">
+        </div>
+        <div class="col-sm-6">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="sp_password"><i class="fa-solid fa-key"></i></span>
+                <input id="senha" name="senha" type="password" class="form-control" placeholder="Digite sua senha"
+                       aria-label="Username"
+                       aria-describedby="sp_password">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="sp_confsenha"><i class="fa-solid fa-lock"></i></span>
+                <input id="confsenha" name="confsenha" type="password" class="form-control"
+                       placeholder="Confirme sua senha"
+                       aria-label="Username"
+                       aria-describedby="sp_confsenha">
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <button class="btn btn-secondary" >Login</button>
+            </div>
+            <div class="col-sm-6 text-end">
+                <input value="Cadastre-se" class="btn btn-success" type="submit">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -83,7 +83,7 @@ $("#enviar").click(validaEnvio);
             if(podeEnviar){
                 $.ajax({
                     type: "POST",
-                    url: "/cadastro",
+                    url: "/Cadastro",
                     data:{
                         nome:nome,
                         email:email,

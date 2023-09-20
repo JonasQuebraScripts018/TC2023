@@ -1,10 +1,8 @@
 package com.agendados.master.Controller;
 
+import com.agendados.master.Model.M_Resposta;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.agendados.master.Model.M_Pessoa;
@@ -41,5 +39,20 @@ public class C_Pessoa {
         return (M_Pessoa) session.getAttribute("usuario");
     }
 
+    @GetMapping("/Cadastro")
+    public String getCadastro(){
+        return "Cadastro/Cadastro";
+    }
+
+    @PostMapping("/Cadastro")
+    @ResponseBody
+    public M_Resposta postCadastro(@RequestParam("nome") String nome,
+                                   @RequestParam("email") String email,
+                                   @RequestParam("cpf") String cpf,
+                                   @RequestParam("senha") String senha,
+                                   @RequestParam("confsenha") String confsenha,
+                                   RedirectAttributes redirectAttributes){
+        return S_Pessoa.cadastrarPessoa(nome, email, cpf, senha, confsenha);
+    }
 
 }
