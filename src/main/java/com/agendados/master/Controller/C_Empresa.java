@@ -16,9 +16,8 @@ public class C_Empresa {
     }
 
     @PostMapping("/LoginEmpresa")
-    public String postLoginEmpresa(@RequestParam("nome") String nome,
+    public String postLoginEmpresa(@RequestParam("cnpj") String cnpj,
                                    @RequestParam("senha") String senha,
-                                   @RequestParam("cnpj") String cnpj,
                                    HttpSession session,
                                    RedirectAttributes redirectAttributes){
         return null;
@@ -35,6 +34,8 @@ public class C_Empresa {
                                       @RequestParam("email") String email,
                                       @RequestParam("telefone") String telefone,
                                       @RequestParam("cep") String cep,
+                                      @RequestParam("senha") String senha,
+                                      @RequestParam("confsenha") String confsenha,
                                       RedirectAttributes redirectAttributes){
         return null;
     }
